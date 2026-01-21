@@ -1,0 +1,95 @@
+.container {
+    padding: 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(11, 17, 71, 0.534);
+    overflow: hidden;
+    border-radius: 4%;
+    border: 4px linear-gradient(20deg, rgb(253, 253, 253) 10%, rgb(7, 185, 240) 100%) solid;
+    box-shadow: 0 4px 4px rgba(15, 18, 211, 0.425);
+    flex: 1 1 calc(33.33% - 32px);
+    max-width: 1 1 calc(33.333% - 32px);
+}
+
+.pokemon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0px 16px rgba(132, 248, 248, 0.438);
+    transition: all 0.3s ease;
+}
+
+.pokemon-image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background:linear-gradient(135deg, rgb(0, 2, 110) 5%, rgb(10, 10, 190) 8%);
+}
+
+.pokemon-info {
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+.pokemon-name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.pokemon-type {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 19px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 16px;
+}
+.type-electric {
+    background: linear-gradient(20deg, rgb(12, 189, 212) 10%, rgb(20, 38, 192) 100%);
+}
+.type-fire {
+    background: linear-gradient(20deg, rgb(212, 209, 12) 10%, rgb(192, 31, 20) 100%);
+}
+.type-normal {
+    background: linear-gradient(20deg, rgb(143, 143, 143) 10%, rgb(95, 95, 95) 100%);
+}
+.type-ghost {
+    background: linear-gradient(20deg, rgb(233, 77, 233) 10%, rgb(243, 165, 250) 100%);
+}
+.type-psychic {
+    background: linear-gradient(20deg, rgb(204, 111, 247) 10%, rgb(121, 30, 241) 100%);
+}
+.type-grass {
+    background: linear-gradient(20deg, rgb(40, 99, 1) 10%, rgb(19, 214, 45) 100%);
+}
+.type-water {
+    background: linear-gradient(20deg, rgb(10, 65, 218) 10%, rgb(22, 80, 156) 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-grid {
+        width: 100%;
+        gap: 8px;
+    }
+    .pokemon-card {
+        flex: 100%;
+        gap: 8px;
+    }
+}
