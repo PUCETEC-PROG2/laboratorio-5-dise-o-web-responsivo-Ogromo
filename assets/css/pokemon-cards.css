@@ -93,3 +93,13 @@
         gap: 8px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .pokemon-grid {
+        gap: 16px;
+    }
+    .pokemon-card {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
