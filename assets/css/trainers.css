@@ -1,0 +1,112 @@
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 28px;
+}
+
+.trainer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 12px;
+    margin: 32px auto;
+    padding: 21px;
+    overflow: hidden;
+    background: rgba(0, 4, 42, 0.797);
+    border-radius: 21px;
+    border: rgba(86, 0, 247, 0.727) solid;
+    box-shadow: 0 4px 4px rgba(72, 11, 185, 0.537);
+    flex: 1 1 calc(33.33% - 32px);
+    max-width: 1 1 calc(33.333% - 32px);
+}
+
+.trainer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 21px rgba(18, 221, 221, 0.655);
+    border: rgba(3, 254, 254, 0.567) solid;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    padding: 32px;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+.trainer-name {
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+.trainer-region {
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px
+}
+
+.trainer-badges {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px;
+}
+
+.trainer-status {
+    font-size: 18px;
+    border-radius: 8px;
+    border: rgba(196, 196, 0, 0.442) solid;
+    background: rgba(116, 122, 3, 0.512);
+    box-shadow: 0 2px 4px rgba(236, 216, 0, 0.456);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 8px;
+}
+
+.trainer-image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    border:rgba(97, 4, 168, 0.792) solid 4px;
+    box-shadow: 0 4px 12px rgba(140, 78, 255, 0.537);
+    object-fit: contain;   
+}
+
+.trainer-info {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px;   
+}
+
+@media screen and (max-width: 768px) {
+    .trainers-grid {
+        width: 100%;
+        gap: 8px;
+    }
+    .trainer-card {
+        flex: 100%;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .trainers-grid {
+        gap: 16px;
+    }
+    .trainer-card {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

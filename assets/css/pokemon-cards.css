@@ -16,15 +16,16 @@
     background: rgba(11, 17, 71, 0.534);
     overflow: hidden;
     border-radius: 4%;
-    border: 4px linear-gradient(20deg, rgb(253, 253, 253) 10%, rgb(7, 185, 240) 100%) solid;
-    box-shadow: 0 4px 4px rgba(15, 18, 211, 0.425);
+    border: rgb(59, 2, 194) solid;
+    box-shadow: 0 4px 4px rgba(72, 11, 185, 0.537);
     flex: 1 1 calc(33.33% - 32px);
     max-width: 1 1 calc(33.333% - 32px);
 }
 
 .pokemon-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0px 16px rgba(132, 248, 248, 0.438);
+    box-shadow: 0 8px 16px rgba(18, 221, 221, 0.655);
+    border: rgb(7, 185, 240) solid;
     transition: all 0.3s ease;
 }
 
