@@ -36,6 +36,12 @@
     background:linear-gradient(135deg, rgb(0, 2, 110) 5%, rgb(10, 10, 190) 8%);
 }
 
+.pokemon-image:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, rgb(21, 80, 129) 10%, rgb(10, 127, 190) 100%);
+    transition: all 0.8s ease-in;
+}
+
 .pokemon-info {
     text-align: center;
     flex-direction: row;
